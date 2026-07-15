@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 transition-colors duration-300;
+  }
+
+  body.dark {
+    @apply bg-[#0b0f19] text-slate-100;
+  }
+
+  /* Custom Scrollbar for columns and page */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 dark:bg-slate-800 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors;
+  }
+}
+
+/* Custom Premium UI Helper classes */
+.glass-panel {
+  @apply bg-white/70 dark:bg-[#131b2e]/70 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 shadow-premium;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 dark:from-violet-400 dark:via-indigo-400 dark:to-cyan-400;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-tr from-violet-500/10 via-indigo-500/5 to-cyan-500/10 dark:from-violet-500/5 dark:via-indigo-500/5 dark:to-cyan-500/5;
+}
+
+.premium-glow {
+  box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.15);
+}
+
+.dark .premium-glow {
+  box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.3);
+}
+
+/* Smooth transitions */
+.smooth-all {
+  @apply transition-all duration-300 ease-in-out;
+}

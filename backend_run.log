@@ -1,0 +1,119 @@
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.flowboard:flowboard >-----------------------
+[INFO] Building flowboard 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ flowboard >>>
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ flowboard ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO]
+[INFO] --- compiler:3.11.0:compile (default-compile) @ flowboard ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ flowboard ---
+[INFO] skip non existing resourceDirectory /app/backend/src/test/resources
+[INFO]
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ flowboard ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ flowboard <<<
+[INFO]
+[INFO]
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ flowboard ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-07-15T22:35:49.671Z  INFO 230131 --- [           main] com.flowboard.FlowBoardApplication       : Starting FlowBoardApplication using Java 21.0.10 with PID 230131 (/app/backend/target/classes started by jules in /app/backend)
+2026-07-15T22:35:49.674Z  INFO 230131 --- [           main] com.flowboard.FlowBoardApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T22:35:50.534Z  INFO 230131 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T22:35:50.718Z  INFO 230131 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 172 ms. Found 5 JPA repository interfaces.
+2026-07-15T22:35:51.592Z  INFO 230131 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-15T22:35:51.615Z  INFO 230131 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T22:35:51.615Z  INFO 230131 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-07-15T22:35:51.705Z  INFO 230131 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T22:35:51.707Z  INFO 230131 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1982 ms
+2026-07-15T22:35:51.920Z  INFO 230131 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T22:35:51.980Z  INFO 230131 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-15T22:35:52.019Z  INFO 230131 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T22:35:52.280Z  INFO 230131 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T22:35:52.309Z  INFO 230131 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T22:35:52.761Z  INFO 230131 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@819fb19
+2026-07-15T22:35:52.762Z  INFO 230131 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T22:35:52.798Z  WARN 230131 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-15T22:35:53.907Z  INFO 230131 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T22:35:54.047Z  INFO 230131 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T22:35:54.622Z  INFO 230131 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-15T22:35:55.355Z  INFO 230131 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ea8832c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45e6f47a, org.springframework.security.web.context.SecurityContextHolderFilter@77fa509a, org.springframework.security.web.header.HeaderWriterFilter@31ee5a9, org.springframework.web.filter.CorsFilter@11a9f958, org.springframework.security.web.authentication.logout.LogoutFilter@2ca93dee, com.flowboard.security.JwtAuthFilter@315365ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1abacff3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a3d4cd2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7585531b, org.springframework.security.web.session.SessionManagementFilter@7aca4144, org.springframework.security.web.access.ExceptionTranslationFilter@20c1cb0c, org.springframework.security.web.access.intercept.AuthorizationFilter@48186ba8]
+2026-07-15T22:35:55.607Z  INFO 230131 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-07-15T22:35:55.616Z  INFO 230131 --- [           main] com.flowboard.FlowBoardApplication       : Started FlowBoardApplication in 6.403 seconds (process running for 7.023)
+2026-07-15T23:10:39.474Z  INFO 230131 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-15T23:10:39.487Z  INFO 230131 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-15T23:10:39.539Z  INFO 230131 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 49 ms
+Hibernate: select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into users (created_at,email,name,password) values (?,?,?,?)
+Hibernate: select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only
+Hibernate: insert into users (created_at,email,name,password) values (?,?,?,?)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select t1_0.id,t1_0.assignee,t1_0.column_id,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 join kanban_columns c1_0 on c1_0.id=t1_0.column_id join boards b1_0 on b1_0.id=c1_0.board_id where b1_0.user_id=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.id=?
+Hibernate: insert into boards (color,created_at,description,title,updated_at,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into kanban_columns (board_id,position,title) values (?,?,?)
+Hibernate: insert into kanban_columns (board_id,position,title) values (?,?,?)
+Hibernate: insert into kanban_columns (board_id,position,title) values (?,?,?)
+Hibernate: insert into kanban_columns (board_id,position,title) values (?,?,?)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.assignee,t1_0.column_id,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 join kanban_columns c1_0 on c1_0.id=t1_0.column_id join boards b1_0 on b1_0.id=c1_0.board_id where b1_0.user_id=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 where b1_0.id=?
+Hibernate: select c1_0.board_id,c1_0.id,c1_0.position,c1_0.title from kanban_columns c1_0 where c1_0.board_id=? order by c1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 where b1_0.id=?
+Hibernate: select c1_0.board_id,c1_0.id,c1_0.position,c1_0.title from kanban_columns c1_0 where c1_0.board_id=? order by c1_0.position
+Hibernate: insert into kanban_columns (board_id,position,title) values (?,?,?)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select kc1_0.id,kc1_0.board_id,kc1_0.position,kc1_0.title from kanban_columns kc1_0 where kc1_0.id=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 where b1_0.id=?
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: insert into tasks (assignee,column_id,created_at,description,due_date,position,priority,title,updated_at) values (?,?,?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select t1_0.id,t1_0.assignee,t1_0.column_id,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 join kanban_columns c1_0 on c1_0.id=t1_0.column_id join boards b1_0 on b1_0.id=c1_0.board_id where b1_0.user_id=?
+Hibernate: select kc1_0.id,kc1_0.board_id,kc1_0.position,kc1_0.title from kanban_columns kc1_0 where kc1_0.id=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.name,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 where b1_0.id=?
+Hibernate: select b1_0.id,b1_0.color,b1_0.created_at,b1_0.description,b1_0.title,b1_0.updated_at,b1_0.user_id from boards b1_0 left join users u1_0 on u1_0.id=b1_0.user_id where u1_0.id=? order by b1_0.updated_at desc
+Hibernate: select c1_0.board_id,c1_0.id,c1_0.position,c1_0.title from kanban_columns c1_0 where c1_0.board_id=? order by c1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select l1_0.task_id,l1_0.id,l1_0.color,l1_0.name from labels l1_0 where l1_0.task_id=?
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position
+Hibernate: select t1_0.column_id,t1_0.id,t1_0.assignee,t1_0.created_at,t1_0.description,t1_0.due_date,t1_0.position,t1_0.priority,t1_0.title,t1_0.updated_at from tasks t1_0 where t1_0.column_id=? order by t1_0.position

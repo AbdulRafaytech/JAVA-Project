@@ -1,0 +1,20 @@
+# System and OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build & Logs
+backend/target/
+frontend/dist/
+*.log
+*.class
+node_modules/
